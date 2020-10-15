@@ -1,0 +1,252 @@
+/* estilos de la web maleteo*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+    
+}
+
+.logo-header{
+    display: flex;
+    margin: 18vw;
+}
+
+
+.jumbotron{
+    background-image: url("/assets/img/jumbo@2x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 63.5vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+.transparencia {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 40px;
+    width: 30vw;
+    height: 100%;
+    color: white;
+    align-items: left;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin-left: 17vw;
+    
+}
+
+.store-logo{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.logo-logo {
+    margin: 15px;
+    width: 10vw;
+}
+
+
+
+.como-funciona{
+    padding-left: 5px;
+    margin: 5%;
+}
+
+.titulo-funciona {
+    padding: 30px;
+    text-align: center; 
+    font-size: 30px;
+    
+
+}
+
+.textos-funciona{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.paso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paso-circulo{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: rgb(240, 157, 63);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.7em;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.paso-titulo{
+    text-align: center;
+    font-size: 25px;
+    padding: 2%;
+
+}
+
+.paso-texto{
+    text-align: center;
+}
+
+.campo-formulario{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.formulario{
+    width: max-content;
+    height: max-content;
+    margin-left: 5vw;
+    border: 1px solid lightgray;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 7px;
+}
+
+.select-city {
+    padding: 5px;
+    margin: 13px 0 0 29px;
+}
+
+.acept-priv{
+    padding: 5px;
+    
+}
+.mobile{
+    
+    margin-left: 15vw;
+    
+
+}
+
+.img-mobile{
+    width: 90%;
+    height: max-content;
+ }
+
+.titulo-solicita{
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+}
+
+.opiniones{
+    padding: 40px;
+    margin: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.texto-opiniones{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.texto-solo{
+    margin: 1vw;
+    border: 5px solid #8ec39c;
+    padding: 30px;
+
+}
+
+.texto-id {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.deja-coment{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;  
+}
+
+.titulo-coment{
+    font: bold 30px/1.5 arial, helvetica, sans-serif;
+}
+
+.nom-comentario {
+    display: flex;
+    flex-direction: row;
+    margin: 0 365px 5px;
+    font-size: larger;
+}
+
+.area-coment{
+    border: lightskyblue solid 1px;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+/* Media Queries*/
+
+@media (max-width:1000px){
+
+    .jumbotron{
+        background-image: url("/html/maleteo/assets/img/jumbo@2x.jpg");
+    }
+
+
+}
+

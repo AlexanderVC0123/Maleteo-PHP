@@ -1,0 +1,160 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Welcome!
+{% endblock %}
+
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="css/style.css">
+{% endblock %}
+
+
+{% block body %}
+
+	<header class="header">
+		<picture class="logo-header">
+			<img src="assets/img/logo.svg" alt="Logo de Maleteo">
+		</picture>
+	</header>
+
+	<section class="jumbotron">
+		<article class="transparencia">
+			<p>
+				Gana dinero guardando equipaje a viajetos como tú
+			</p>
+			<article class="store-logo">
+
+				<picture><img src="assets/img/app-store.svg" alt="Logo de app store" class="logo-logo"></picture>
+
+				<picture><img src="assets/img/google-play.svg" alt="Logo de google play" class="logo-logo"></picture>
+
+			</article>
+		</article>
+
+	</section>
+	<section class="como-funciona">
+		<article>
+			<div class="titulo-funciona">
+				<p>¿Cómo funciona?</p>
+			</div>
+			<div class="textos-funciona">
+				<div class="paso">
+					<div class="paso-circulo">1</div>
+					<div class="paso-titulo">Date de alta</div>
+					<div class="paso-texto">Una olla de algo más vaca que carnero, salpicón 
+																						                        las mas noches, duelos y quebrantos los sábados.</div>
+				</div>
+				<div class="paso">
+					<div class="paso-circulo">2</div>
+					<div class="paso-titulo">Date de alta</div>
+					<div class="paso-texto">Una olla de algo más vaca que carnero, salpicón 
+																						                        las mas noches, duelos y quebrantos los sábados.</div>
+				</div>
+				<div class="paso">
+					<div class="paso-circulo">3</div>
+					<div class="paso-titulo">Date de alta</div>
+					<div class="paso-texto">Una olla de algo más vaca que carnero, salpicón 
+																						                        las mas noches, duelos y quebrantos los sábados.</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section class="campo-formulario">
+		<div class="mobile">
+			<img src="assets/img/iPhoneX.png" alt="" class="img-mobile">
+		</div>
+		<div class="formulario">
+			<form id="registro" name="registro">
+
+				<div>
+					<p class="titulo-solicita">Solicita una demo</p>
+				</div>
+				<div>
+					<label for="name">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" required="required" class="form-input">
+
+				</div>
+				<div>
+					<label for="name">Apellidos:</label>
+					<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required="required" class="form-input">
+
+				</div>
+
+				<div>
+					<label for="name">Email:</label>
+					<input type="email" id="email" name="email" placeholder="blabla@bla.bla" required="required" class="form-input">
+				</div>
+				<div>
+					<p>Ciudad:
+						<select name="ciudad" id="Ciudad" class="select-city">
+							<option value="Madrid" selected>Madrid</option>
+							<option value="Barcelona" selected>Barcelona</option>
+							<option value="Sevilla" selected>Sevilla</option>
+						</select>
+					</p>
+				</div>
+				<div class="acept-priv">
+				<p><input style="display: inline;" type="checkbox" name="politica" required="required" value="1">Aceptas la
+					<a href="#">politica de privacidad</a>
+				</p>
+				</div>
+				<div>
+					<input id="boton" type="submit"></input>
+			</div>
+		</form>
+	</div>
+</section>
+
+<section class="opiniones">
+	<title>Opiniones de otros guardianes</title>
+
+	<article class="texto-opiniones">
+		
+		
+		{% for opinion in comentarios %}
+			<article class="texto">
+			<article class="texto-solo"><p> {{opinion.comentario}}</p></article>
+			<article class="texto-id">{{opinion.nombre}}</article>
+			<article class="texto-city">{{opinion.Ciudad}}</article>
+
+			</article>
+		{% endfor %}
+		
+		
+	</article>
+
+</section>
+
+
+<section class="deja-coment">
+	<article class="titulo-coment">
+		<p>Déjanos tu comentario</p>
+	</article>
+	<form>
+		<article class="nom-comentario">
+			<label for="name">Nombre:
+			</label>
+			<input type="text" id="nom-coment" name="nom-coment" placeholder="Nombre" required="required">
+			
+			<label for="ciudad">Ciudad:
+			</label>
+			<input type="text" id="ciud-coment" name="ciud-coment" placeholder="Ciudad" required="required">
+
+		</article>
+		<textarea placeholder="Deja aquí tu comentario..." name="text-comentario" cols="60" rows="9" class="area-coment"></textarea>
+		<div>
+			<input id="boton-coment" name="boton-coment" type="submit"></input>
+		</div>
+	</form>
+</section>
+<footer>
+<div class="logo-footer">
+	<img src="assets/img/logo.svg" alt="">
+</div>
+<div class="creado-por">
+	<h3>
+		<strong>Hecho por Alexander en Madrid</strong>
+	</h3>
+</div></footer>
+{% endblock %}
+
